@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.campo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    max-width: 240px;
+}
+.campo-input{
+  width: 100%;
+  padding:10px;
+  border: 1px solid rgba(53, 87, 66, 0.52);
+  background: #fff;
+  border-radius: 5px;
+  outline: none;
+  color: #424242;
+  font-size: 1em;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  font-family: 'Lora', serif;
+}
+.label-description {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #424242;
+  text-transform: capitalize;
+  font-family: 'Lora', serif;
+
+}
+.campo .campo-input:valid ~ .label-description,
+.campo .campo-input:focus ~ .label-description{
+  color: #0a1312;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #fff;
+
+}
+.acciones{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.row-body:hover{
+  background-color: #00dfc4;
+}
+.description-row{
+  font-family: 'Lora', serif;
+  font-weight: 500;
+    color: #424242;
+    width: 100%;
+}
+.upload-file{
+  font-family: 'Lora', serif;
+  color: #424242;
+}
+.campo-head{
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  margin: auto;
+  font-family: 'Lora', serif;
+}
+.contenedor-camposM{
+   display: flex;
+   margin:2px 0;
+   gap: 10px;
+}
+.description-modal{
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+.contenedor-camposM p:nth-child(2) {
+  text-transform: capitalize;
+  margin: auto 0;
+  font-size: 15px;
+  font-family: 'Lora', serif;
+}
+.listado-vacio{
+  width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    background: red;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+.comentario-rechazo::placeholder{
+  text-align: center;
+}
